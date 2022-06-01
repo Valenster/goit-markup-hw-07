@@ -1,0 +1,17 @@
+.section{
+    width: max-content;
+    &-title{
+        font-size: 14px;
+        &-link{
+            display: block;
+        }
+    }
+}
+
+.link{
+    display: block;
+}
+
+p{
+    margin: auto;
+}

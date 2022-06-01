@@ -1,0 +1,19 @@
+.section {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.section-title {
+  font-size: 14px;
+}
+.section-title-link {
+  display: block;
+}
+
+.link {
+  display: block;
+}
+
+p {
+  margin: auto;
+}/*# sourceMappingURL=main.css.map */
