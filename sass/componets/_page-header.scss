@@ -1,0 +1,83 @@
+.header{
+    border-bottom: 1px solid #ECECEC;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__flex{
+    @include flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+
+.site-nav{
+    display: flex;
+    margin-left: 93px;
+}
+
+.site-nav__item + .site-nav__item { 
+    display: flex;
+    margin-left: 50px;
+}
+
+
+.site-nav__link{
+    color: inherit;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.site-nav__link--current{
+    color: getColor('accent');
+}
+
+.site-nav__current{
+    position: relative;
+}
+
+.site-nav__link--current::after{
+    position: absolute;
+    bottom: -34px;
+    left: 50%;
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: getColor('accent');
+    transform: translate(-50%);
+    /* margin-top: 28px; */
+}
+
+
+.contacts-nav__icon{ 
+    margin-right: 10px;
+    fill: get-color('text');
+    transition: fill $t-duration $t-t-function;
+}
+
+.contacts-nav{
+    display: flex;
+    margin-left: 305px;
+}
+
+.contacts-nav__item:not(:last-child){
+    margin-right: 30px;
+}
+
+
+
+.contacts-nav__link:hover,
+.contacts-nav__link:focus{
+    & .contacts-nav__icon{
+         fill: getColor('accent');
+    }
+    
+}
+
+.contacts-nav__link{
+    @include flex();
+    color: getColor('text');
+    letter-spacing: 0.02em;
+    font-weight: 500;
+}

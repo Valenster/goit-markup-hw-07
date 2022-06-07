@@ -27,3 +27,16 @@ transition: background-color $t-duration $t-t-function;
     line-height: 1.17;
     text-align: center;
 } 
+
+
+.logo, .logo__part{
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.logo{
+    color: getColor('accent');
+}
