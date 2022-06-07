@@ -11,34 +11,35 @@
         <link rel="stylesheet" href="./css/main.css">
     </head>
     <body>
-        <header class="nav">
+        <header class="header">
             <div class="container">
-                <nav class="main-nav">
-                    <a href="./index.html" class="logo-part-2 link" ><span class="logo-part-1">Web</span>Studio</a>
-                    <ul class="site-nav-list list">
-                        <li class="item"><a class="link" href="./index.html">Студия</a> 
+                <nav class="header__flex">
+                    <a href="./index.html" class="logo link"><span class="logo__part">Web</span>Studio</a>
+                    <ul class="site-nav list">
+                        <li class="site-nav__item">
+                            <a href="./index.html" class="site-nav__link link">Студия</a>
                         </li>
-                        <li  class="item">
-                            <div class="position">
-                                <a href=""  class="link current">Портфолио</a>
-                            </div> 
+                        <li class="site-nav__item">
+                            <div class="site-nav__current">
+                                <a href="./portfolio.html" class="site-nav__link link site-nav__link--current">Портфолио</a>
+                            </div>
                         </li>
-                        <li class="item"><a href="" class="link">Контакты</a>
+                        <li class="site-nav__item"><a href="" class="site-nav__link link">Контакты</a>
                         </li>
-                    </ul>         
+                    </ul>
                     <ul class="contacts-nav list">
-                        <li class="item">
-                            <a href="mailto:info@devstudio.com" class="link mail-link">
-                                <svg width="12" height="16" class="icon envelope">
+                        <li class="contacts-nav__item">
+                            <a href="mailto:info@devstudio.com" class="contacts-nav__link link">
+                                <svg width="12" height="16" class="contacts-nav__icon">
                                     <use href="./images/symbol-defs-squoash.svg#icon-envelope"></use>
                                 </svg>
                                 info@devstudio.com</a>
                         </li>
-                        <li class="item">
-                            <a href="tel:+380961111111" class="link tel-link">
-                                <svg width="10" height="16" class="icon smartphone">
+                        <li class="contacts-nav__item">
+                            <a href="tel:+380961111111" class="contacts-nav__link link">
+                                <svg width="10" height="16" class="contacts-nav__icon">
                                     <use href="./images/symbol-defs-squoash.svg#icon-smartphone"></use>
-                                </svg>   
+                                </svg>
                                 +38 096 111 11 11</a>
                         </li>
                     </ul>
@@ -48,174 +49,171 @@
         <main class="section">
             <div class="container">
                 <!-- <h1>Портфолио</h1> -->
-
                 <ul class="portfolio-nav list">
-                    <li class="list-item">
-                        <button class="button first-button" type="button">Все</button>
+                    <li class="portfolio-nav__item">
+                        <button class="portfolio-nav__first-button" type="button">Все</button>
                     </li>
-                    <li class="list-item">
-                        <button class="button" type="button">Веб-сайты</button>
-                    </li>
-                    <li class="list-item"><button class="button" type="button">Приложения</button></li>
-                    <li class="list-item"><button class="button" type="button">Дизайн</button></li>
-                    <li class="list-item"><button class="button" type="button">Маркетинг</button></li>
+                    <li class="portfolio-nav__item"><button class="portfolio-nav__button" type="button">Веб-сайты</button></li>
+                    <li class="portfolio-nav__item"><button class="portfolio-nav__button" type="button">Приложения</button></li>
+                    <li class="portfolio-nav__item"><button class="portfolio-nav__button" type="button">Дизайн</button></li>
+                    <li class="portfolio-nav__item"><button class="portfolio-nav__button" type="button">Маркетинг</button></li>
                 </ul>
-                <ul class="work-examples list">
-                    <li class="list-item">
-                        <a href="" class="link">
-                            <div class="portfolio-examples">
-                                <div class="thumb">    
+                <ul class="portfolio list">
+                    <li class="portfolio__item">
+                        <a href="" class="portfolio__link link">
+                            <div class="portfolio__examples">
+                                <div class="portfolio__thumb">    
                                     <img src="./images/jpg1.jpg" alt="Ноутбук з відкритим сайтом" width="370">                              
-                                    <div class="port-overlay">
-                                        <p class="text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                     <div class="portfolio__overlay">
+                                        <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                     </div>
                                 </div>
-                                <div class="photo-card">
-                                    <h2 class="title">Технокряк</h2>
-                                    <p class="title-text">Веб-сайт</p>
+                                <div class="portfolio__photo-card">
+                                    <h2 class="portfolio__title">Технокряк</h2>
+                                    <p class="portfolio__title-text">Веб-сайт</p>
                                 </div>
                             </div>
                             
                         </a>
                     </li>
-                    <li class="list-item">
-                        <a href="" class="link">
-                            <div class="portfolio-examples">
-                                <div class="thumb">
+                    <li class="portfolio__item">
+                        <a href="" class="portfolio__link link">
+                            <div class="portfolio__examples">
+                                <div class="portfolio__thumb">
                                     <img src="./images/jpg2.jpg" alt="Гра в баскетбол" width="370">
-                                    <div class="port-overlay">
-                                        <p class="port-overlay-text text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                     </div>
                                 </div>
-                                <div class="photo-card">
-                                    <h2 class="title">Постер <span lang="en" class="title">New Orlean vs Golden Star</span></h2>
-                                    <p class="title-text">Дизайн</p>
+                                <div class="portfolio__photo-card">
+                                    <h2 class="portfolio__title">Постер <span lang="en" class="title">New Orlean vs Golden Star</span></h2>
+                                    <p class="portfolio__title-text">Дизайн</p>
                                     <!-- <p class="title-text">Текст після наведення на картинку</p> -->
                                 </div>
                             </div>
                             
                         </a>
                     </li>
-                    <li class="list-item">
-                        <a href="" class="link">
-                            <div class="portfolio-examples">
-                                <div class="thumb">
+                    <li class="portfolio__item">
+                        <a href="" class="portfolio__link link">
+                            <div class="portfolio__examples">
+                                <div class="portfolio__thumb">
                                     <img src="./images/jpg3.jpg" alt="Лого фірми" width="370">
-                                    <div class="port-overlay">
-                                        <p class="port-overlay-text text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                     </div>
                                 </div>
-                                <div class="photo-card">
-                                    <h2 class="title">Ресторан <span lang="en" class="title">Seafood</span></h2>
-                                    <p class="title-text">Приложение</p>
+                                <div class="portfolio__photo-card">
+                                    <h2 class="portfolio__title">Ресторан <span lang="en" class="title">Seafood</span></h2>
+                                    <p class="portfolio__title-text">Приложение</p>
                                     <!-- <p class="title-text">Текст після наведення на картинку</p> -->
                                 </div> 
                             </div>
                             
                         </a>
                     </li>
-                    <li class="list-item">
-                        <a href="" class="link">
-                            <div class="portfolio-examples">
-                                <div class="thumb">
+                    <li class="portfolio__item">
+                        <a href="" class="portfolio__link link">
+                            <div class="portfolio__examples">
+                                <div class="portfolio__thumb">
                                     <img src="./images/jpg4.jpg" alt="Навушники" width="370">
-                                    <div class="port-overlay">
-                                        <p class="port-overlay-text text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                     </div>
                                 </div>
-                                 <div class="photo-card">
-                                    <h2 class="title">Проект <span lang="en" class="title">Prime</span></h2>
-                                    <p class="title-text">Маркетинг</p>
+                                 <div class="portfolio__photo-card">
+                                    <h2 class="portfolio__title">Проект <span lang="en" class="title">Prime</span></h2>
+                                    <p class="portfolio__title-text">Маркетинг</p>
                                     <!-- <p class="title-text">Текст після наведення на картинку</p> -->
                                 </div>
                             </div>
                             
                         </a>
                     </li>
-                    <li class="list-item">
-                        <a href="" class="link">
-                            <div class="portfolio-examples">
-                                <div class="thumb">
+                    <li class="portfolio__item">
+                        <a href="" class="portfolio__link link">
+                            <div class="portfolio__examples">
+                                <div class="portfolio__thumb">
                                     <img src="./images/jpg5.jpg" alt="Зображення коробок" width="370">
-                                    <div class="port-overlay">
-                                        <p class="port-overlay-text text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                     </div>
                                 </div>
-                                <div class="photo-card">
-                                    <h2 class="title">Проект <span lang="en" class="title">Boxes</span></h2>
-                                    <p class="title-text">Приложение</p>
+                                <div class="portfolio__photo-card">
+                                    <h2 class="portfolio__title">Проект <span lang="en" class="title">Boxes</span></h2>
+                                    <p class="portfolio__title-text">Приложение</p>
                                     <!-- <p class="title-text">Текст після наведення на картинку</p> -->
                                 </div>
                             </div>
                             
                         </a>
                     </li>
-                    <li class="list-item">
-                        <a href="" class="link">
-                            <div class="portfolio-examples">
-                                <div class="thumb">
+                    <li class="portfolio__item">
+                        <a href="" class="portfolio__link link">
+                            <div class="portfolio__examples">
+                                <div class="portfolio__thumb">
                                     <img src="./images/jpg6.jpg" alt="Монітор з відкритим сайтом" width="370">
-                                    <div class="port-overlay">
-                                        <p class="port-overlay-text text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                     </div>
                                 </div>
-                                 <div class="photo-card">
-                                    <h2 lang="en" class="title">Inspiration has no Borders</h2>
-                                    <p class="title-text">Веб-сайт</p>
+                                 <div class="portfolio__photo-card">
+                                    <h2 lang="en" class="portfolio__title">Inspiration has no Borders</h2>
+                                    <p class="portfolio__title-text">Веб-сайт</p>
                                     <!-- <p class="title-text">Текст після наведення на картинку</p> -->
                                 </div>
                             </div>
                             
                         </a>
                     </li>
-                    <li class="list-item">
-                        <a href="" class="link">
-                            <div class="portfolio-examples">
-                                <div class="thumb">
+                    <li class="portfolio__item">
+                        <a href="" class="portfolio__link link">
+                            <div class="portfolio__examples">
+                                <div class="portfolio__thumb">
                                     <img src="./images/jpg7.jpg" alt="Відкритий журнал" width="370">
-                                    <div class="port-overlay">
-                                        <p class="port-overlay-text text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                     </div>
                                 </div>
-                                <div class="photo-card">
-                                    <h2 class="title">Издание <span lang="en" class="title">Limited Edition</span></h2>
-                                    <p class="title-text">Дизайн</p>
+                                <div class="portfolio__photo-card">
+                                    <h2 class="portfolio__title">Издание <span lang="en" class="title">Limited Edition</span></h2>
+                                    <p class="portfolio__title-text">Дизайн</p>
                                     <!-- <p class="title-text">Текст після наведення на картинку</p> -->
                                 </div>
                             </div>
                             
                         </a>
                     </li>
-                    <li class="list-item">
-                        <a href="" class="link">
-                            <div class="portfolio-examples">
-                                <div class="thumb">
+                    <li class="portfolio__item">
+                        <a href="" class="portfolio__link link">
+                            <div class="portfolio__examples">
+                                <div class="portfolio__thumb">
                                     <img src="./images/jpg8.jpg" alt="Лейбл" width="370">
-                                    <div class="port-overlay">
-                                        <p class="port-overlay-text text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                     </div>
                                 </div>
-                                <div class="photo-card">
-                                    <h2 class="title">Проект <span lang="en" class="title">LAB</span></h2>
-                                    <p class="title-text">Маркетинг</p>
+                                <div class="portfolio__photo-card">
+                                    <h2 class="portfolio__title">Проект <span lang="en" class="title">LAB</span></h2>
+                                    <p class="portfolio__title-text">Маркетинг</p>
                                     <!-- <p class="title-text">Текст після наведення на картинку</p> -->
                                 </div>
                             </div>
                         </a>
                     </li>
-                    <li class="list-item">
-                    <a href="" class="link">
-                        <div class="portfolio-examples">
-                            <div class="thumb">                                    
+                    <li class="portfolio__item">
+                    <a href="" class="portfolio__link link">
+                        <div class="portfolio__examples">
+                            <div class="portfolio__thumb">                                    
                                 <img src="./images/jpg9.jpg" alt="Ноутбук з відкритим сайтом" width="370">
-                                    <div class="port-overlay">
-                                        <p class="port-overlay-text text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения 
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения 
                                             о компании или частном лице.</p>
                                     </div>
                             </div>
-                            <div class="photo-card">
-                                <h2 lang="en" class="title">Growing Business</h2>
-                                <p class="title-text">Приложение</p>
+                            <div class="portfolio__photo-card">
+                                <h2 lang="en" class="portfolio__title">Growing Business</h2>
+                                <p class="portfolio__title-text">Приложение</p>
                                 <!-- <p class="title-text">Текст після наведення на картинку</p> -->
                             </div>
                         </div>
@@ -225,59 +223,59 @@
                 </ul>
             </div>
         </main>
+
+
         <footer class="footer">
-            <div class="container footer-box">
-                <div class="address-flex">
-                    <a href="" class="logo-part-2 link"><span class="logo-part-1">Web</span>Studio</a>
+            <div class="container footer__container">
+                <div class="footer__box">
+                    <a href="" class="logo logo link"><span class="footer__logo-part">Web</span>Studio</a>
                     <address class="address">
-                    <p>
-                        <span class="city">г. Киев, пр-т Леси Украинки, 26</span>
-                    </p>
-                    <a href="mailto:" class="link">info@example.com</a>
-                    <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
-                </address>
+                        <p class="address__city">г. Киев, пр-т Леси Украинки, 26</p>
+                        <a href="mailto:" class="address__link link">info@example.com</a>
+                        <a href="tel:+380991111111" class="address__link link">+38 099 111 11 11</a>
+                    </address>
                 </div>
                 <div class="join">
-                    <h3 class="title">присоединяйтесь</h3>
-                    <ul class="list">
-                        <li class="list">
-                            <a href="" class="link">
-                                <svg width="20" height="20" class="link-icon">
+                    <h3 class="join__title">присоединяйтесь</h3>
+                    <ul class="join__list list">
+                        <li class="join__item">
+                            <a href="" class="join__link link">
+                                <svg width="20" height="20" class="join__link-icon">
                                     <use href="./images/symbol-defs-squoash.svg#icon-instagram-2"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="list">
-                            <a href="" class="link">
-                                <svg width="20" height="16" class="link-icon">
+                        <li class="join__item">
+                            <a href="" class="join__link link">
+                                <svg width="20" height="16" class="join__link-icon">
                                     <use href="./images/symbol-defs-squoash.svg#icon-twitter-1"></use>
                                 </svg>
                             </a>
                         </li>
-    
-                        <li class="list">
-                            <a href="" class="link">
-                                <svg width="20" height="24" class="link-icon">
+        
+                        <li class="join__item">
+                            <a href="" class="join__link link">
+                                <svg width="20" height="24" class="join__link-icon">
                                     <use href="./images/symbol-defs-squoash.svg#icon-facebook-1"></use>
                                 </svg>
                             </a>
                         </li>
-    
-                        <li class="list">
-                            <a href="" class="link">
-                                <svg width="20" height="20" class="link-icon">
+        
+                        <li class="join__item">
+                            <a href="" class="join__link link">
+                                <svg width="20" height="20" class="join__link-icon">
                                     <use href="./images/symbol-defs-squoash.svg#icon-linkedin-1"></use>
                                 </svg>
                             </a>
                     </ul>
                 </div>
                 <form class="spam-form">
-                    <label for="" class="spam-label">
+                    <label for="" class="spam-form__label">
                         Подпишитесь на рассылку
-                        <input type="email" name="email" class="spam-input" placeholder="E-mail">
+                        <input type="email" name="email" class="spam-form__input" placeholder="E-mail">
                     </label>
-                    <button type="submit" class="spam-button">Подписаться
-                        <svg class="icon-send" width="24" height="24">
+                    <button type="submit" class="spam-form__button button">Подписаться
+                        <svg class="spam-form__icon-send" width="24" height="24">
                             <use href="./images/symbol-defs-squoash.svg#icon-send"></use>
                         </svg>
                     </button>
