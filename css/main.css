@@ -437,6 +437,7 @@ h1, h2, h3, p, ul {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  max-width: 1600px;
 }
 
 .hero__title {
