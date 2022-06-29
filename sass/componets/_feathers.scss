@@ -1,17 +1,12 @@
 .peculiarities{
-     @include flex();
-    margin-bottom: 94px;
-
+    display: block;
 }
 
-.peculiarities__item{
-    width: 270px;
-}
+
 
 .feature__box{
     @include flex(center);
     background-color: #F5F4FA;
-    width: 270px;
     height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;

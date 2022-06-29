@@ -3,12 +3,13 @@
 }
 
 .team__list{
-    @include flex();
+    display: block;
 }
+        
 
 .employee{
-    width: 270px;
-    height: 428px;
+    width: 100%;
+    padding-bottom: 24px;
     background-color: getColor('background');
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -30,13 +31,15 @@
     line-height: 1.19;
     text-align: center;
     color: getColor('text');
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
 .employee__social-media{
-    @include flex();
-    padding-left: 32px;
-    padding-right: 32px;
+    @include flex(center);
+}
+
+.employee__list-item:not(:last-child){
+    margin-right: 10px;
 }
 
 

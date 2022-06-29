@@ -1,3 +1,8 @@
+.works{
+    display: none;
+    
+}
+
 .works__list{
     @include flex();
 }

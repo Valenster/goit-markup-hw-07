@@ -8,26 +8,43 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-        <link rel="stylesheet" href="./dist/main.min.css">
+        <link rel="stylesheet" href="./css/main.min.css">
     </head>
     <body>
         <header class="header">
-            <div class="container">
-                <nav class="header__flex">
+            <div class="container header__container">
+                <div class="header__flex">
                     <a href="./index.html" class="logo link"><span class="logo__part">Web</span>Studio</a>
-                    <ul class="site-nav list">
-                        <li class="site-nav__item">
-                            <a href="./index.html" class="site-nav__link link">Студия</a>
-                        </li>
-                        <li class="site-nav__item">
-                            <div class="site-nav__current">
-                                <a href="./portfolio.html" class="site-nav__link link site-nav__link--current">Портфолио</a>
-                            </div>
-                        </li>
-                        <li class="site-nav__item"><a href="" class="site-nav__link link">Контакты</a>
-                        </li>
-                    </ul>
+                    <button data-menu-button class="header__button" aria-expanded="false" aria-controls="header-menu">
+                        <svg width=40 height="40">
+                            <use class="header__menu-open" href="./images/symbol-defs-squoash.svg#menu-open"></use>
+                            <use class="header__close-menu" href="./images/symbol-defs-squoash.svg#close-menu"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div data-menu class="header__menu" id="header-menu">
+                    <nav>
+                        <ul class="site-nav list">
+                            <li class="site-nav__item">
+                                    <a href="./index.html" class="site-nav__link link ">Студия</a>
+                            </li>
+                            <li class="site-nav__item">
+                                <div class="site-nav__current">
+                                    <a href="" class="site-nav__link site-nav__link--current link">Портфолио</a>
+                                </div>
+                            </li>
+                            <li class="site-nav__item"><a href="" class="site-nav__link link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
                     <ul class="contacts-nav list">
+                        <li class="contacts-nav__item">
+                            <a href="tel:+380961111111" class="contacts-nav__tel link">
+                                <svg width="10" height="16" class="contacts-nav__icon">
+                                    <use href="./images/symbol-defs-squoash.svg#icon-smartphone"></use>
+                                </svg>
+                                +38 096 111 11 11</a>
+                        </li>
                         <li class="contacts-nav__item">
                             <a href="mailto:info@devstudio.com" class="contacts-nav__link link">
                                 <svg width="12" height="16" class="contacts-nav__icon">
@@ -43,7 +60,23 @@
                                 +38 096 111 11 11</a>
                         </li>
                     </ul>
-                </nav>
+                    <ul class="social-nav list">
+                        <li class="social-nav__item">
+                            <a class="social-nav__link link" href="">Instagram</a>
+                        </li>
+                        <li class="social-nav__item">
+                            <a class="social-nav__link link" href="">Twitter</a>
+                        </li>
+                        <li class="social-nav__item">
+                            <a class="social-nav__link link" href="">Facebook</a>
+                        </li>
+                        <li class="social-nav__item">
+                            <a class="social-nav__link link" href="">Linkedln</a>
+                        </li>
+                    </ul>
+        
+                </div>
+        
             </div>
         </header>
         <main class="section">
@@ -63,12 +96,15 @@
                         <a href="" class="portfolio__link link">
                             <div class="portfolio__examples">
                                 <div class="portfolio__thumb">    
-                                    <img src="./images/jpg1.jpg" alt="Ноутбук з відкритим сайтом" width="370">                              
+                                    <img 
+                                    class="portfolio__image"
+                                    srcset="./images/jpg1.jpg 1x, ./images/potf1@2x.jpg 2x"
+                                    src="./images/jpg1.jpg"   alt="Ноутбук з відкритим сайтом">                              
                                      <div class="portfolio__overlay">
                                         <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                     </div>
                                 </div>
-                                <div class="portfolio__photo-card">
+                                <div class="portfolio__photo-card portfolio__photo-card--padding">
                                     <h2 class="portfolio__title">Технокряк</h2>
                                     <p class="portfolio__title-text">Веб-сайт</p>
                                 </div>
@@ -80,7 +116,10 @@
                         <a href="" class="portfolio__link link">
                             <div class="portfolio__examples">
                                 <div class="portfolio__thumb">
-                                    <img src="./images/jpg2.jpg" alt="Гра в баскетбол" width="370">
+                                    <img 
+                                    class="portfolio__image" 
+                                    srcset="./images/jpg2.jpg 1x, ./images/potf2@2x.jpg 2x"
+                                    src="./images/jpg2.jpg"  alt="Гра в баскетбол">
                                     <div class="portfolio__overlay">
                                         <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                     </div>
@@ -98,7 +137,10 @@
                         <a href="" class="portfolio__link link">
                             <div class="portfolio__examples">
                                 <div class="portfolio__thumb">
-                                    <img src="./images/jpg3.jpg" alt="Лого фірми" width="370">
+                                    <img 
+                                    class="portfolio__image" 
+                                    srcset="./images/jpg3.jpg 1x, ./images/potf3@2x.jpg 2x"
+                                    src="./images/jpg3.jpg"  alt="Лого фірми">
                                     <div class="portfolio__overlay">
                                         <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                     </div>
@@ -116,7 +158,10 @@
                         <a href="" class="portfolio__link link">
                             <div class="portfolio__examples">
                                 <div class="portfolio__thumb">
-                                    <img src="./images/jpg4.jpg" alt="Навушники" width="370">
+                                    <img 
+                                    class="portfolio__image" 
+                                    srcset="./images/jpg4.jpg 1x, ./images/potf4@2x.jpg 2x"
+                                    src="./images/jpg4.jpg"  alt="Навушники">
                                     <div class="portfolio__overlay">
                                         <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                     </div>
@@ -134,7 +179,10 @@
                         <a href="" class="portfolio__link link">
                             <div class="portfolio__examples">
                                 <div class="portfolio__thumb">
-                                    <img src="./images/jpg5.jpg" alt="Зображення коробок" width="370">
+                                    <img 
+                                    class="portfolio__image" 
+                                    srcset="./images/jpg5.jpg 1x, ./images/potf5@2x.jpg 2x"
+                                    src="./images/jpg5.jpg"  alt="Зображення коробок">
                                     <div class="portfolio__overlay">
                                         <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                     </div>
@@ -152,7 +200,10 @@
                         <a href="" class="portfolio__link link">
                             <div class="portfolio__examples">
                                 <div class="portfolio__thumb">
-                                    <img src="./images/jpg6.jpg" alt="Монітор з відкритим сайтом" width="370">
+                                    <img 
+                                    class="portfolio__image" 
+                                    srcset="./images/jpg6.jpg 1x, ./images/portf6@2x.jpg 2x"
+                                    src="./images/jpg6.jpg"  alt="Монітор з відкритим сайтом">
                                     <div class="portfolio__overlay">
                                         <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                     </div>
@@ -170,7 +221,10 @@
                         <a href="" class="portfolio__link link">
                             <div class="portfolio__examples">
                                 <div class="portfolio__thumb">
-                                    <img src="./images/jpg7.jpg" alt="Відкритий журнал" width="370">
+                                    <img 
+                                    class="portfolio__image" 
+                                    srcset="./images/jpg7.jpg 1x, ./images/portf7@2x.jpg 2x"
+                                    src="./images/jpg7.jpg"  alt="Відкритий журнал">
                                     <div class="portfolio__overlay">
                                         <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                     </div>
@@ -188,7 +242,10 @@
                         <a href="" class="portfolio__link link">
                             <div class="portfolio__examples">
                                 <div class="portfolio__thumb">
-                                    <img src="./images/jpg8.jpg" alt="Лейбл" width="370">
+                                    <img 
+                                    class="portfolio__image" 
+                                    srcset="./images/jpg8.jpg 1x, ./images/portf8@2x.jpg 2x"
+                                    src="./images/jpg8.jpg"  alt="Лейбл">
                                     <div class="portfolio__overlay">
                                         <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                     </div>
@@ -205,7 +262,10 @@
                     <a href="" class="portfolio__link link">
                         <div class="portfolio__examples">
                             <div class="portfolio__thumb">                                    
-                                <img src="./images/jpg9.jpg" alt="Ноутбук з відкритим сайтом" width="370">
+                                <img 
+                                class="portfolio__image" 
+                                srcset="./images/jpg9.jpg 1x, ./images/portf9@2x.jpg 2x"
+                                src="./images/jpg9.jpg"  alt="Ноутбук з відкритим сайтом">
                                     <div class="portfolio__overlay">
                                         <p class="portfolio__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения 
                                             о компании или частном лице.</p>
@@ -223,10 +283,9 @@
                 </ul>
             </div>
         </main>
-
-
-        <footer class="footer">
-            <div class="container footer__container">
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__container-flex">
                 <div class="footer__box">
                     <a href="" class="logo logo link"><span class="footer__logo-part">Web</span>Studio</a>
                     <address class="address">
@@ -252,7 +311,7 @@
                                 </svg>
                             </a>
                         </li>
-        
+
                         <li class="join__item">
                             <a href="" class="join__link link">
                                 <svg width="20" height="24" class="join__link-icon">
@@ -260,7 +319,7 @@
                                 </svg>
                             </a>
                         </li>
-        
+
                         <li class="join__item">
                             <a href="" class="join__link link">
                                 <svg width="20" height="20" class="join__link-icon">
@@ -269,19 +328,22 @@
                             </a>
                     </ul>
                 </div>
-                <form class="spam-form">
-                    <label for="" class="spam-form__label">
-                        Подпишитесь на рассылку
-                        <input type="email" name="email" class="spam-form__input" placeholder="E-mail">
-                    </label>
-                    <button type="submit" class="spam-form__button button">Подписаться
-                        <svg class="spam-form__icon-send" width="24" height="24">
-                            <use href="./images/symbol-defs-squoash.svg#icon-send"></use>
-                        </svg>
-                    </button>
-                </form>
             </div>
-        </footer>
+            <form class="spam-form">
+                <label class="spam-form__label">
+                    Подпишитесь на рассылку
+                    <input type="email" name="email" class="spam-form__input" placeholder="E-mail">
+                </label>
+                <button type="submit" class="spam-form__button button">Подписаться
+                    <svg class="spam-form__icon-send" width="24" height="24">
+                        <use href="./images/symbol-defs-squoash.svg#icon-send"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/modal-menu.js"></script>
     </body>
 
     </html>

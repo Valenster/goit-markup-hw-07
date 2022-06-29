@@ -16,6 +16,9 @@ $colors:(
 
 $t-duration: 250ms;
 $t-t-function: cubic-bezier(0.4, 0, 0.2, 1);
+$phone: 480px;
+$tablet: 768px;
+$pc: 1200px;
 
 
 
@@ -29,6 +32,10 @@ body{
     letter-spacing: 0.03em;
 }
 
+body.modal-open{
+    overflow: hidden;
+}
+
 @mixin flex($type:space-between) {
     display: flex;
     justify-content: $type;
@@ -38,10 +45,11 @@ body{
 img{
     max-width: 100%;
     display: block;
+    height: auto;
 }
 
-.container{
-    width: 1200px;
+.container{ 
+    max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
